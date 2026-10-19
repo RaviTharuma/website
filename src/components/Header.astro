@@ -1,0 +1,31 @@
+---
+import { getSite } from "../lib/content";
+
+interface Props {
+  current: string;
+}
+
+const { current } = Astro.props;
+const site = getSite();
+---
+
+<header>
+  <div class="header-bar">
+    <p class="brand">
+      {current === "/" ? site.name : <a href="/">{site.name}</a>}
+    </p>
+    <nav class="nav" aria-label="Primary">
+      {
+        site.nav.map((link) =>
+          link.href === current ? (
+            <span aria-current="page">{link.label}</span>
+          ) : (
+            <a href={link.href}>{link.label}</a>
+          ),
+        )
+      }
+    </nav>
+    <a class="button" href={site.bookHref}>{site.bookLabel}</a>
+  </div>
+  <hr class="rule" />
+</header>
