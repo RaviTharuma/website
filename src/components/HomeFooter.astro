@@ -1,0 +1,38 @@
+---
+import { getSite } from "../lib/content";
+
+const site = getSite();
+---
+
+<footer class="home-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <p class="footer-name">{site.name}</p>
+      <p class="footer-bio">{site.homeFooter.bio}</p>
+      <a class="button" href={site.bookHref}>{site.bookLabel}</a>
+    </div>
+    <nav class="footer-col" aria-label="Practice">
+      <h2>Practice</h2>
+      {site.homeFooter.practice.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <nav class="footer-col" aria-label="Site">
+      <h2>Site</h2>
+      {site.homeFooter.site.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <nav class="footer-col" aria-label="Contact">
+      <h2>Contact</h2>
+      <a href={site.bookHref}>{site.email}</a>
+      <a href={site.linkedin} rel="noopener noreferrer">LinkedIn</a>
+      <a href={site.domainHref}>{site.domainLabel}</a>
+      <a href={site.github} rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </div>
+  <hr class="rule" />
+  <div class="legal">
+    <p>{site.yearLine}</p>
+    <nav aria-label="Legal">
+      <a href="/impressum">Impressum</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </div>
+</footer>

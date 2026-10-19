@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/lexend/300.css";
+import "@fontsource/lexend/400.css";
+import "@fontsource/lexend/500.css";
+import "@fontsource/lexend/600.css";
+import Header from "../components/Header.astro";
+import HomeFooter from "../components/HomeFooter.astro";
+import InnerFooter from "../components/InnerFooter.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  current: string;
+  footer: "home" | "inner";
+}
+
+const { title, description, current, footer } = Astro.props;
+const pageTitle = title === "Ravi Tharuma" ? title : `${title} — Ravi Tharuma`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class={footer === "home" ? "field" : "paper"}>
+    <Header current={current} />
+    <main>
+      <slot />
+    </main>
+    {footer === "home" ? <HomeFooter /> : <InnerFooter current={current} />}
+  </body>
+</html>

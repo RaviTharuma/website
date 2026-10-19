@@ -1,0 +1,43 @@
+---
+import { getSite } from "../lib/content";
+
+interface Props {
+  current: string;
+}
+
+const { current } = Astro.props;
+const site = getSite();
+const legal = [
+  { href: "/impressum", label: "Impressum" },
+  { href: "/privacy", label: "Privacy" },
+];
+---
+
+<footer class="inner-footer">
+  <hr class="rule" />
+  <div class="inner-top">
+    <div class="inner-brand">
+      <p class="footer-name"><a href="/">{site.name}</a></p>
+      <p class="footer-bio">{site.innerFooter.bio}</p>
+    </div>
+    <nav class="inner-links" aria-label="Footer">
+      {
+        site.innerFooter.links.map((link) =>
+          link.href === current ? <span aria-current="page">{link.label}</span> : <a href={link.href}>{link.label}</a>,
+        )
+      }
+      <a class="external" href={site.github} rel="noopener noreferrer">GitHub</a>
+      <a class="external" href={site.linkedin} rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+  </div>
+  <div class="legal">
+    <p>{site.yearLine}</p>
+    <nav aria-label="Legal">
+      {
+        legal.map((link) =>
+          link.href === current ? <span aria-current="page">{link.label}</span> : <a href={link.href}>{link.label}</a>,
+        )
+      }
+    </nav>
+  </div>
+</footer>

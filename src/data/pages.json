@@ -1,0 +1,125 @@
+{
+  "practice": {
+    "title": "Practice",
+    "description": "Four lines. Nothing else is offered.",
+    "eyebrow": "Practice",
+    "headline": "Four lines. Nothing else is offered.",
+    "paragraphs": [
+      "The work is the decision underneath the tool. Engagements are with Ravi Tharuma. There is no bench to manage."
+    ],
+    "rows": [
+      {
+        "id": "ai-operating-model",
+        "title": "AI operating model",
+        "body": "Where an agent belongs in the business, and where it would only add noise. The result is a written line the team can keep."
+      },
+      {
+        "id": "product-judgment",
+        "title": "Product judgment",
+        "body": "What to build, what to stop, and what should never be software."
+      },
+      {
+        "id": "technical-diligence",
+        "title": "Technical diligence",
+        "body": "A read before capital, a hire, or a platform bet."
+      },
+      {
+        "id": "executive-advisory",
+        "title": "Executive advisory",
+        "body": "A principal in the room for the decision itself."
+      }
+    ],
+    "links": []
+  },
+  "work": {
+    "title": "Work",
+    "description": "Selected mandates. Names of companies are not published.",
+    "eyebrow": "Work",
+    "headline": "Selected mandates.",
+    "paragraphs": ["Names of companies are not published. The shape of the work is."],
+    "rows": [
+      {
+        "id": "regulated-firm",
+        "title": "Regulated firm, twelve weeks",
+        "body": "An operating model the board could defend without a translator. The stack got shorter. The decision had one owner."
+      },
+      {
+        "id": "marketplace",
+        "title": "Marketplace, nine weeks",
+        "body": "A line between work that should be automated and work that should stay with people."
+      },
+      {
+        "id": "founder-team",
+        "title": "Founder team, sixteen weeks",
+        "body": "One stack, one owner, and the tools that were removed."
+      }
+    ],
+    "links": []
+  },
+  "method": {
+    "title": "Method",
+    "description": "Listen. Refuse. Install.",
+    "eyebrow": "Method",
+    "headline": "Listen. Refuse. Install.",
+    "paragraphs": [
+      "An engagement is three movements. It ends when the company can keep the decision without him in the room."
+    ],
+    "rows": [
+      {
+        "id": "listen",
+        "title": "Listen",
+        "body": "The constraint, the politics, and the real deadline."
+      },
+      {
+        "id": "refuse",
+        "title": "Refuse",
+        "body": "The work that would waste a quarter is named in writing."
+      },
+      {
+        "id": "install",
+        "title": "Install",
+        "body": "A decision and a system the team can run. The handoff is the product."
+      }
+    ],
+    "links": []
+  },
+  "about": {
+    "title": "About",
+    "description": "Ravi Tharuma advises founders and executives on AI, product, and the systems underneath them.",
+    "eyebrow": "About",
+    "headline": "Ravi Tharuma.",
+    "paragraphs": [
+      "He advises founders and executives on AI, product, and the systems underneath them. Lava is the agency. This site is the person.",
+      "The public record is under the name ravitharuma."
+    ],
+    "rows": [],
+    "links": [
+      { "href": "https://github.com/ravitharuma", "label": "github.com/ravitharuma" },
+      { "href": "https://www.linkedin.com/in/ravitharuma", "label": "linkedin.com/in/ravitharuma" }
+    ]
+  },
+  "impressum": {
+    "title": "Impressum",
+    "description": "Responsible for this site.",
+    "eyebrow": "Impressum",
+    "headline": "Responsible for this site.",
+    "paragraphs": [
+      "Ravi Tharuma. Email ravi.tharuma@lava.agency. A postal address is given on request.",
+      "ravitharuma.io is the personal practice. It is separate from client work."
+    ],
+    "rows": [],
+    "links": []
+  },
+  "privacy": {
+    "title": "Privacy",
+    "description": "What this site keeps.",
+    "eyebrow": "Privacy",
+    "headline": "What this site keeps.",
+    "paragraphs": [
+      "The pages are static. An email to ravi.tharuma@lava.agency is a conversation, not a form stored on this site.",
+      "GitHub and LinkedIn are github.com/ravitharuma and linkedin.com/in/ravitharuma. Those sites keep their own policies."
+    ],
+    "rows": [],
+    "links": []
+  }
+}

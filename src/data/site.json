@@ -1,0 +1,41 @@
+{
+  "name": "Ravi Tharuma",
+  "email": "ravi.tharuma@lava.agency",
+  "bookLabel": "Book a conversation",
+  "github": "https://github.com/ravitharuma",
+  "linkedin": "https://www.linkedin.com/in/ravitharuma",
+  "domainLabel": "ravitharuma.io",
+  "domainHref": "https://ravitharuma.io",
+  "yearLine": "2026 Ravi Tharuma",
+  "nav": [
+    { "href": "/", "label": "Start" },
+    { "href": "/practice", "label": "Practice" },
+    { "href": "/work", "label": "Work" },
+    { "href": "/method", "label": "Method" },
+    { "href": "/about", "label": "About" }
+  ],
+  "homeFooter": {
+    "bio": "Senior counsel for founders and executives. Judgment first. Systems second.",
+    "practice": [
+      { "href": "/practice#ai-operating-model", "label": "AI operating model" },
+      { "href": "/practice#product-judgment", "label": "Product judgment" },
+      { "href": "/practice#technical-diligence", "label": "Technical diligence" },
+      { "href": "/practice#executive-advisory", "label": "Executive advisory" }
+    ],
+    "site": [
+      { "href": "/", "label": "Start" },
+      { "href": "/work", "label": "Work" },
+      { "href": "/method", "label": "Method" },
+      { "href": "/about", "label": "About" }
+    ]
+  },
+  "innerFooter": {
+    "bio": "Senior counsel. One principal.",
+    "links": [
+      { "href": "/practice", "label": "Practice" },
+      { "href": "/work", "label": "Work" },
+      { "href": "/method", "label": "Method" },
+      { "href": "/about", "label": "About" }
+    ]
+  }
+}

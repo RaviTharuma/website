@@ -1,0 +1,51 @@
+{
+  "title": "Ravi Tharuma",
+  "description": "Senior counsel for companies that already have a team.",
+  "eyebrow": "For founders and executives",
+  "headline": "Senior counsel for companies that already have a team.",
+  "support": "He sits with the people who own the decision, when the next system or agent workflow is too expensive to get wrong.",
+  "points": [
+    {
+      "lead": "Clearer decisions.",
+      "rest": "The call is made with the people who own it."
+    },
+    {
+      "lead": "Fewer tools.",
+      "rest": "The stack gets shorter, not decorated."
+    },
+    {
+      "lead": "A system they can run.",
+      "rest": "It stays after the engagement."
+    }
+  ],
+  "reply": "He replies himself.",
+  "metric": {
+    "value": "12",
+    "label": "Weeks",
+    "caption": "A typical mandate"
+  },
+  "chart": {
+    "kicker": "One principal",
+    "title": "On the work",
+    "bars": [
+      { "label": "Retained", "tone": "retained" },
+      { "label": "Bench", "tone": "bench" }
+    ]
+  },
+  "proof": ["Founders", "Operators", "Boards", "Regulated teams", "One principal"],
+  "changesTitle": "What changes",
+  "changes": [
+    {
+      "title": "The decision",
+      "body": "Named, owned, and small enough to make."
+    },
+    {
+      "title": "The stack",
+      "body": "Fewer tools. The ones that remain have an owner."
+    },
+    {
+      "title": "The handoff",
+      "body": "A system the team runs on a Tuesday, without him."
+    }
+  ]
+}

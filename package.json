@@ -1,7 +1,21 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "postcss-cli": "^11.0.0"
+  "name": "ravitharuma-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal site for Ravi Tharuma, built with Astro from local JSON.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test tests/content.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource/lexend": "5.3.0",
+    "@fontsource/poppins": "5.3.0",
+    "astro": "7.4.1"
   }
 }

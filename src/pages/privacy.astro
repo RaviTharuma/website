@@ -1,0 +1,8 @@
+---
+import ArticlePage from "../components/ArticlePage.astro";
+import { getPage } from "../lib/content";
+
+const page = getPage("privacy");
+---
+
+<ArticlePage page={page} current="/privacy" />

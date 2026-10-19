@@ -1,0 +1,46 @@
+---
+import Base from "../layouts/Base.astro";
+import type { PageDocument } from "../lib/content";
+
+interface Props {
+  page: PageDocument;
+  current: string;
+}
+
+const { page, current } = Astro.props;
+---
+
+<Base title={page.title} description={page.description} current={current} footer="inner">
+  <article class="article">
+    <p class="eyebrow">{page.eyebrow}</p>
+    <h1 class="headline">{page.headline}</h1>
+    {page.paragraphs.map((paragraph) => <p class="lead">{paragraph}</p>)}
+  </article>
+  {
+    page.rows.length > 0 && (
+      <section class="rows">
+        {page.rows.map((row) => (
+          <Fragment>
+            <hr class="rule" />
+            <article id={row.id}>
+              <h2>{row.title}</h2>
+              <p>{row.body}</p>
+            </article>
+          </Fragment>
+        ))}
+        <hr class="rule" />
+      </section>
+    )
+  }
+  {
+    page.links.length > 0 && (
+      <nav class="social" aria-label="Public record">
+        {page.links.map((link) => (
+          <a href={link.href} rel="noopener noreferrer">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+    )
+  }
+</Base>
